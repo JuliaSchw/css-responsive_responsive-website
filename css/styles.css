@@ -211,9 +211,6 @@ fairly essential to completing this challenge. */
   gap: var(--gap);
   background: var(--inky-black);
   padding: var(--gap);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 .footer-nav {
@@ -248,16 +245,16 @@ width, etc. */
 
 /* Media Query Tablet */
 /* --- */
-@media screen and (min-width: 559px) {
-  .main-content {
-    display: flex;
-    justify-content: space-around;
+@media screen and (min-width: 900px) {
+  .card-section {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .card-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+  .card-section > article,
+  .card-section > p {
+    width: 48%;
   }
 }
 
@@ -266,5 +263,21 @@ width, etc. */
 /* Media Query Desktop */
 /* --- */
 @media screen and (min-width: 1200px) {
+  .product-card.--forest {
+    width: 96%;
+    height: 500px;
+  }
+  body {
+    margin: auto;
+    width: 70%;
+  }
+  .main-header {
+    margin: auto;
+    width: 1200px;
+  }
+  .navbar {
+    margin: auto;
+    width: 70%;
+  }
 }
 /* --- */
