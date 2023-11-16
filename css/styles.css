@@ -135,6 +135,7 @@ fairly essential to completing this challenge. */
 
 .main-content {
   margin-top: var(--main-content-margin-top);
+  margin-bottom: 116px;
   padding: var(--gap) 0 var(--gap) 0;
   background: var(--navy-blue);
 }
