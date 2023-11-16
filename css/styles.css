@@ -210,6 +210,9 @@ fairly essential to completing this challenge. */
   gap: var(--gap);
   background: var(--inky-black);
   padding: var(--gap);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-nav {
